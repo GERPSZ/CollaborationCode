@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+X=`date +%k`
+
+if test $X -ge 7 && test $X -le 12
+then
+    echo "matinnnnnnnnnnn"
+
+elif test $X -ge 13  && test $X -le 19  
+then
+    echo "apres midiiiiiiii"
+
+elif test $X -ge 20 && test $X -le 24
+then
+    echo "Soirrrrrrrrrrrrrrrrr"
+
+else
+    echo "nuit"
+fi 
+
