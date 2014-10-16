@@ -1,0 +1,39 @@
+#!/bin/bash
+
+REPONSE=a
+A=`ls /root`
+B=`ls /etc/passwd`
+
+until test $REPONSE=="q" || test $REPONSE=="Q"  
+do 
+
+
+read REPONSE
+if test $REPONSE=A || test $REPONSE=a
+then
+echo "Contenu du repertoire $A"
+
+elif test $REPONSE=B || test $REPONSE=b
+then
+echo "Contenu du repertoire $B"
+
+fi
+
+done
+
+
+echo "AU REVOIR"
+
+#REP=10
+
+#until test  $REP -lt 1 
+
+#do
+
+#echo "Entrer o pour repeter la boucle:"
+
+
+#let REP--
+#echo $REP
+
+#done
