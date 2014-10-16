@@ -1,0 +1,10 @@
+liste=`ls`
+repertoirecourrant=`pwd`
+
+for VAR in $liste
+
+do
+
+echo "Le repertoire $repetoirecourrant contient le fichier $VAR"
+
+done
