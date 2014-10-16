@@ -1,0 +1,26 @@
+
+#!bin/bash/
+
+
+ echo ""
+echo "TAPEZ UNE LETTRE"
+read  LETTRE
+ echo ""
+
+
+case $LETTRE in
+
+[[:lower:]])
+echo -e "Minuscule";;
+
+[[:upper:]])
+echo -e "Mayuscule";;
+
+[[:digit:]])
+echo -e "digit";;
+ 
+*)echo -e "pas de lettre ou numero"
+
+ exit;;
+
+esac
