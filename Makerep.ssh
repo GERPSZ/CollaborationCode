@@ -1,0 +1,13 @@
+REP=0;
+
+while [ $REP -lt 5 ];
+
+do
+
+echo "Creation de sous repertoire"
+
+mkdir -p {"un","deux","trois","quatre","cinq"}
+
+let REP=REP+1
+
+done
